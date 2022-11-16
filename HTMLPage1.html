@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=420, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" />
+    <title>팀별 과제</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <script src="Script1.js"></script>
+
+    <style>
+        /*smartphone*/
+        @media screen and (max-width:767px) {
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="VirtualView">
+        <div class="menubar">
+            <span>
+                <img style="width:50px; height:50px; float:left;" src="menu2.png"
+                     class="circleBt" id="circleBt" onclick="showLeftMenu(this); return false;" />
+                <img style="width:200px; height:70px; margin-left:100px; margin-top:15px; float:left;" src="logo.png" onclick="window.scrollTo(0,0);" />
+            </span>
+        </div>
+
+        <!--자동 이미지 슬라이드-->
+        <div>
+            <img class="slide1" src="mainphoto1.jpg" />
+            <img class="slide1" src="mainphoto2.jpg" />
+            <img class="slide1" src="mainphoto3.jpg" />
+        </div>
+        
+        <div class="hideMenuBody" id="hideMenuBodyId" style="position:fixed; padding-top:0px;">
+            <ul class="menu">
+                <li>
+                    <a href="#" onclick="openLoginPage()"; style="font-weight:700;">로그인</a>
+                </li>
+                <li>
+                    <a href="#" style="font-weight:700;">여행정보</a>
+                    <ul class="submenu">
+                        <li><a href="#">국내</a></li>
+                        <li><a href="#">해외</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" style="font-weight:700;">고객센터</a>
+                    <ul class="submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" style="font-weight:700;">상품투어</a>
+                    <ul class="submenu">
+                        <li><a href="#">여행프로그램소개</a></li>
+                        <li><a href="#">여행자료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" style="font-weight:700;">티켓/가이드</a>
+                    <ul class="submenu">
+                        <li><a href="#">항공</a></li>
+                        <li><a href="#">호텔</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" style="font-weight:700;">MEMBER</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="signUpPage()";>회원가입</a></li>
+                        <li><a href="#" onclick="updatePage()";>회원정보수정</a></li>
+                    </ul>
+                </li>
+                <li onclick="closeLeftMenu(); return false;" style="font-weight:700;">Close</li>
+            </ul>
+        </div>
+    </div>
+
+    <h4 style="text-align:center;">다시 찾는 인기 여행지 <br />TOP 3</h4>
+
+    <div class="container3">
+        <div class="contents">
+            <a href="javascript:showPopUp1()">
+                <img src="img_topplace01.jpg" />
+                <h4>성페트릭 대성당</h4>
+                <p>바쁜 뉴욕 안에서 정교하면서도 웅장한<br />기운에 침묵하게 되는 기도의 시간!</p>
+                <hr width="60" style="color: darkgray; margin:auto;" />
+                <b>VIEW</b>
+                <br /><br />
+            </a>
+        </div>
+        <div class="contents">
+            <a href="javascript:showPopUp2()">
+                <img src="img_topplace02.jpg" />
+                <h4>원주 뮤지엄 '산'</h4>
+                <p>전시된 유산들을 담아낸 건물에 신비로운<br />돌과 물의 테마가 담겨 있다.</p>
+                <hr width="60" style="color: darkgray; margin:auto;" />
+                <b>VIEW</b>
+                <br /><br />
+            </a>
+        </div>
+        <div class="contents">
+            <a href="javascript:showPopUp3()">
+                <img src="img_topplace03.jpg" />
+                <h4>일본 만국박람회 기념공원</h4>
+                <p>오사카 센리 반파쿠에는 드넓은 대지에<br />정원과 돌, 물과 함께 하는 문화가 있다.</p>
+                <hr width="60" style="color: darkgray; margin:auto;" />
+                <b>VIEW</b>
+                <br /><br />
+            </a>
+        </div>
+    </div>
+    <br />
+
+    <hr />
+    <br />
+    <p style="margin-left:25px; font-size:20px; font-weight:600;">NOTICE</p>
+    <ul style="float:left; text-overflow:ellipsis;">
+        <li>이번 여름 휴가 제주 갈까? 미션 투어</li>
+        <li>박물관 미션 투어 응모 당첨자 발표</li>
+        <li>추석 연휴 티켓/투어 배송 및 직접 수령 안내</li>
+        <li>하롱베이 서비스 OPEN!</li>
+        <li>투어리스트인투어 서비스 점검 안내</li>
+    </ul>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><hr />
+    <br />
+
+    <div style="float:left;">
+        <div style="margin-left:10px;">
+            <span>이용약관</span>
+            <span> | </span>
+            <span>개인정보취급방침</span>
+            <p>
+                투어리스트인투어<br />
+                서울특별시 종로구 혜화동 9길 행운빌딩 5층<br />
+                대표전화 02-1234-5678<br />
+                E-mail : tour@touristintour.com<br />
+                Copyright(c) TouristinTour all right reservered
+            </p>
+        </div>
+        <div class="container">
+            <div class="sns"><img src="ico_blog_r.png" width="50" height="60" /></div>
+            <div class="sns"><img src="ico_face.png" width="50" height="45" /></div>
+            <div class="sns"><img src="ico_instargram_r.png" width="50" height="60" /></div>
+        </div>
+    </div>
+
+    <span class="up_botton" onclick="window.scrollTo(0,0);"><img src="up1.png" /></span> <!--버튼을 누르면 맨 위로 올라감-->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div style="background-color:dimgray; height:50px; color:white;">
+        <span><img src="phone1.png" width="35" height="35" style="margin-top:7px;" /></span>
+        <span>전화 문의</span>
+        <span> | </span>
+        <span><img src="talk1.png" width="35" height="35" style="margin-top:7px;" /></span>
+        <span>카카오톡 상담</span>
+        <span> | </span>
+        <span><img src="map1.png" width="35" height="35" style="margin-top:7px;" /></span>
+        <span>오시는 길</span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

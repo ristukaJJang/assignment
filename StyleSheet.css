@@ -1,0 +1,174 @@
+﻿body {
+    overflow-y: scroll;
+    position : relative;
+    
+}
+
+
+.menubar {
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100px;
+    position: fixed;
+    display: block;
+    margin: auto;
+    float: left;
+}
+
+.container {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    margin-left:80px;
+}
+
+.container3 {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}
+
+div.sns {
+    float: left;
+    margin: 0 3px;
+    padding: 10px;
+    width: 55px;
+    height: 55px;
+    display: block;
+}
+
+div.contents {
+    float: left;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.slide1 {
+   margin:0px;
+   padding:0px;
+   width: 420px;
+   height: 350px;
+   
+}
+
+span.up_botton {
+    float: right;
+    right: 15px;
+    bottom: 65px;
+    position: fixed;
+}
+
+a {
+    text-decoration:none;
+    color : black;
+}
+
+.VirtualView {
+    overflow: hidden;
+    position: relative;
+}
+
+.hideMenuBody {
+    width: 160px;
+    height: 400px;
+    z-index:101;
+    background-color: white;
+    transition: transform 600ms;
+    transform: translate(-150px, 0px);
+    -ms-transition: -ms-transform 600ms;
+    -webkit-transition: -webkit-transform 600ms;
+    -moz-transition: -moz-transform 600ms;
+    -o-transition: -o-transform 600ms;
+    -ms-transform: translate(-150px, 0px);
+    -webkit-transform: translate(-150px, 0px);
+    -moz-transform: translate(-150px, 0px);
+    -o-transform: translate(-150px, 0px);
+}
+
+.hideMenuBody > div {
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
+        vertical-align: central;
+        text-align: left;
+        color: #ffffff;
+        cursor: pointer;
+        margin-bottom: 5px;
+        box-shadow: 1px 1px 0px #ffffff;
+    }
+
+.hideMenuBody > div:hover {
+            background-color: #808080;
+        }
+
+.circleBt {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+.circleBt:hover {
+        background: radial-gradient(#A5A5A5 50%, #ffffff 60%, #A5A5A5 10%);
+    }
+
+.circleBt > div {
+        width: 24px;
+        height: 5px;
+        background-color: #ffffff;
+        margin-top: 5px;
+        margin-left: 13px;
+    }
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a {
+    color: black;
+}
+
+.menu > li {
+    width: 100%;
+    text-align: left;
+    line-height: 40px;
+}
+
+.menu > li:hover {
+        background-color: white;
+        transition-duration: 0.5s;
+    }
+
+.menu > li:hover .submenu {
+            height: 100px;
+            transition-duration: 1s;
+        }
+
+.submenu > li {
+    line-height: 50px;
+    background-color: white;
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.menu {
+    width: 150px;
+    overflow: hidden;
+    padding: 0px;
+    text-align: left;
+}
